@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 60px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  text-decoration: underline;
+  margin: 32px 0;
+  color: white;
+  font-size: 24px;
+}
+h2 {
+  text-decoration: underline;
+  margin: 32px 0;
+  color: white;
+  font-size: 24px;
+}
+
+.completed-todo {
+  text-decoration: line-through;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-item:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.todo-countbox {
+  align-self: center;
+  color: #fff;
+  width: 2em;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: #5470ef;
+  border-radius: 50%;
+  text-align: center;
+  padding: 4px 4px;
+  margin: 10px 10px;
+}
+
+.delete-btn {
+  stroke-width: 1;
+  stroke-opacity: initial;
+  fill: hwb(270 99% 0% / 0.862);
+  width: 1.5em;
+  height: 1.5em;
+  background-color: rgb(199, 27, 218);
+}
+.checkbox {
+  width: 1em;
+  height: 1em;
+}
